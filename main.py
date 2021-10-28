@@ -13,7 +13,9 @@ for i in range(4000):
     q = Ce*(1-math.cos(w0*t))
     t_mass.append(t)
     q_mass.append(q)
-
+plt.title("Зависимость q(t)")
+plt.xlabel("t")
+plt.ylabel("q(t)")
 plt.plot(t_mass, q_mass)
 plt.plot([0, t_mass[-1]], [0, 0])
 plt.show()
